@@ -5,6 +5,7 @@ package task2;
  */
 public class Main {
     public static void main(String[] args) {
+
         StationeryShop shop = new StationeryShop();
         shop.addPurchase(0, new Pen(3494.434));
         shop.addPurchase(0, new Notebook(0.5656));
