@@ -18,13 +18,12 @@ public class StationeryShop {
     }
 
     public void addPurchase(int workerID, Evaluated purchase){
-        if (workers.containsKey(workerID)){
-            workers.get(workerID).add(purchase);
-        } else{
+        if (!workers.containsKey(workerID)){
             List<Evaluated> purchs = new LinkedList<>();
-            purchs.add(purchase);
             workers.put(workerID, purchs);
         }
+
+        workers.get(workerID).add(purchase);
     }
 
     public double getWrkrPurchSum(int workerID){

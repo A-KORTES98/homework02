@@ -11,5 +11,6 @@ public class Main {
         shop.addPurchase(0, new Notebook(0.5656));
         shop.addPurchase(1, new Notebook(45.67));
         System.out.println(shop.getAllPurchSum());
+        System.out.println(shop.getWrkrPurchSum(0));
     }
 }

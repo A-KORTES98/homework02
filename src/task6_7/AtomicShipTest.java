@@ -6,8 +6,8 @@ package task6_7;
 
 public class AtomicShipTest{
     public static void main(String[] args) {
-        AtomicShip aShip = new AtomicShip();
-        aShip.runAtomicShip();
+        AtomicSubmar aShip = new AtomicSubmar();
+        aShip.runAtomicSubmar();
     }
 }
 
@@ -18,12 +18,12 @@ public class AtomicShipTest{
  * @author Mazur Anton
  * @version 1.0
  */
-class AtomicShip{
+class AtomicSubmar{
     /**
      * Method that run the atomic underwater ship
      */
-    public void runAtomicShip(){
-        AtomicShipEngine aEng = new AtomicShipEngine();
+    public void runAtomicSubmar(){
+        AtomicSubmarEngine aEng = new AtomicSubmarEngine();
         aEng.runEngine();
     }
     /**
@@ -33,7 +33,7 @@ class AtomicShip{
      * @author Mazur Anton
      * @version 1.0
      */
-    private class AtomicShipEngine{
+    private class AtomicSubmarEngine{
         /**
          * Method that run the engine
          */
